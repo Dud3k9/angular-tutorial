@@ -4,32 +4,3 @@
 <router-outlet></router-outlet>
 
 
-<!-- 
-<h1>Dyrektywy</h1>
-<h2>ngif</h2>
-<label for="check">
-  Autoryzuj
-  <input
-    id="check"
-    type="checkbox"
-    [checked]="access"
-    (change)="handleCheckboxChange($event)"
-  />
-  <p *ngIf="access" style="background-color: green; color: white">ok</p>
-  <p *ngIf="!access" style="background-color: red; color: white">not ok</p>
-</label>
-
-<h2>ngFor</h2>
-<ul>
-  <li *ngFor="let item of cardStats | cardStatsSort | slice:0:3; let index = index">
-    <div class="flex gap-3">
-      <p>{{ index + 1 }}.</p>
-      <p>{{ item!.name }}</p>
-      <p>{{ item!.count }}</p>
-    </div>
-  </li>
-</ul>
-
-<h2 [appSetColor]="customDirectiveColor">custom</h2>
-<input type="color" [(ngModel)]="customDirectiveColor">
-  -->
