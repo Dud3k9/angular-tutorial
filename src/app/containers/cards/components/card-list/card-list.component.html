@@ -1,7 +1,11 @@
+<div class="flex justify-between">
   <div *ngIf="cards$ | async as cards">
     <div *ngFor="let item of cards" class="flex flex-row gap-4">
       <p>{{ item.content }}</p>
       <p class="font-semibold">{{ item.person }}</p>
     </div>
   </div>
-  
+  <div>
+    <app-add-card-form (onCardAdd)="addCard$.next($event)"></app-add-card-form>
+  </div>
+</div>
