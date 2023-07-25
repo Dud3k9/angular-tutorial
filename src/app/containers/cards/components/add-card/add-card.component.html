@@ -1,0 +1,5 @@
+<app-add-card-form
+  (onCardAdd)="handleAddNewCard($event)"
+/>
+<app-add-card-state-notification [state]="addCardState"/>
+<button routerLink="/cards/list">Lista karteczek</button>

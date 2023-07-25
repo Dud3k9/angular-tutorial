@@ -1,0 +1,5 @@
+<div [ngSwitch]="state">
+  <p *ngSwitchCase="addCardStates.AddSuccess">Poprawnie dodano Karteczkę</p>
+  <p *ngSwitchCase="addCardStates.AddError">Błąd podczas dodawania karteczkę</p>
+  <p *ngSwitchDefault></p>
+</div>

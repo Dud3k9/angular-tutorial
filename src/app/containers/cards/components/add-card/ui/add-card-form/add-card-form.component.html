@@ -1,0 +1,24 @@
+<form class="flex flex-col gap-2 w-56" [formGroup]="formGroup">
+  <label class="flex flex-col">
+    Kontent
+    <textarea [formControl]="formGroup.controls.content"></textarea>
+    <span
+      class="text-red-600 text-sm"
+      *ngIf="this.formGroup.touched && this.formGroup.controls.content.errors"
+    >
+      Pole obowiązkowe
+    </span>
+  </label>
+
+  <label class="flex flex-col">
+    Oskarżony
+    <input [formControl]="formGroup.controls.person" />
+    <span
+      class="text-red-600 text-sm"
+      *ngIf="this.formGroup.touched && this.formGroup.controls.person.errors"
+    >
+      Pole obowiązkowe
+    </span>
+  </label>
+  <button (click)="handleAddCard()">Dodaj karteczkę</button>
+</form>

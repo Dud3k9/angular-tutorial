@@ -9,6 +9,13 @@ const routes: Routes = [
         (m) => m.FirstChapterModule
       ),
   },
+  {
+    path: "cards",
+    loadChildren: () =>
+      import("./containers/cards/cards.module").then(
+        (m) => m.CardsModule
+      ),
+  },
 ];
 
 @NgModule({
